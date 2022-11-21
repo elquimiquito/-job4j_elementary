@@ -35,4 +35,5 @@ public class DivideBySixTest {
         String expected = "The number doesn't divide by 3 and it isn't the even number.";
         assertThat(result).isEqualTo(expected);
     }
+
 }
