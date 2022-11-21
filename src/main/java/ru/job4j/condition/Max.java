@@ -9,4 +9,5 @@ public class Max {
             return result;
         }
     }
+
 }
