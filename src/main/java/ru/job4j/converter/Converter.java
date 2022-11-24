@@ -67,4 +67,5 @@ public class Converter {
         System.out.println("1 euros are 0.85. Test result : " + passed);
 
     }
+
 }
