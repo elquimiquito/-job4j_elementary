@@ -11,11 +11,12 @@ public class SortSelectedTest {
         int[] expected = new int[] {1, 2, 3, 4, 5};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenSort3() {
-        int[] data = new int[]{4,7,6};
+        int[] data = new int[]{4, 7, 6};
         int[] result = SortSelected.sort(data);
-        int[] expected = new int[]{4,6,7};
+        int[] expected = new int[]{4, 6, 7};
         assertThat(result).containsExactly(expected);
     }
 }
