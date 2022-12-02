@@ -20,15 +20,14 @@ public class JavaNameValidator {
         boolean res = true;
         if (name.isEmpty() || !isLowerLatinLetter(name.codePointAt(0))) {
             return false;
-        } else {
-            for (int i = 0; i < name.length(); i++) {
-                int code = name.codePointAt(i);
-                if (!isSpecialSymbol(code) && !isLowerLatinLetter(code) && !isUpperLatinLetter(code) && !isDigit(code)) {
-                    res = false;
-                    break;
-                }
+        }
+        for (int i = 1; i < name.length(); i++) {
+            int code = name.codePointAt(i);
+            if (!isSpecialSymbol(code) && !isLowerLatinLetter(code) && !isUpperLatinLetter(code) && !isDigit(code)) {
+                res = false;
+                break;
             }
         }
-            return res;
+        return res;
     }
 }
